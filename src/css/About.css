@@ -1,0 +1,95 @@
+/* .about-header {
+  text-align: center;
+} */
+
+/* .about-pic {
+  width: 10rem;
+}
+
+.about-pic > img {
+  max-width: 100%;
+  max-height: 100%;
+} */
+
+.about-header {
+  /* font-size: 5rem; */
+  /* font-weight: 200; */
+  /* text-align: center; */
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text-first {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.about-text {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.extra-bold {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.rest-of-text {
+  display: flo;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-history-container {
+  padding-bottom: 5rem;
+  background-color: #222;
+}
+
+.about-history {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-history > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.about-history > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.founder-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.vince {
+  border-radius: 50% 0 50% 25%;
+}
+
+.wilkins {
+  border-radius: 25% 50% 0 50%;
+}
+
+.founder-text-container {
+  font-size: 1.2rem;
+}

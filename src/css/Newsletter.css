@@ -1,0 +1,30 @@
+.newsletter-container {
+  padding-top: 5rem;
+}
+
+.contact-us {
+  max-width: 100%;
+}
+.newsletter-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-text > div {
+  width: 85%;
+}
+
+.newsletter-text > div > p {
+  padding-top: 5rem;
+  font-size: 1.75rem;
+}
+
+.newsletter-text > div > div {
+  display: flex;
+}
+
+.email-form {
+  width: 100%;
+  padding-top: 2rem;
+}

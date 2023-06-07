@@ -1,0 +1,20 @@
+.tc-container {
+  padding-top: 7.5rem;
+}
+
+.tc-header {
+}
+
+.tc-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+Creator,
+Creator2,
+Creator3,
+Creator4 {
+  width: 100%;
+}

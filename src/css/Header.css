@@ -1,0 +1,20 @@
+.navbar-outer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-inner-container {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-inner-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.button-wallet {
+  white-space: nowrap;
+}

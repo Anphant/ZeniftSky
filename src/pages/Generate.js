@@ -1,7 +1,16 @@
+import { Container, Row } from "react-bootstrap";
+
 function Generate() {
   return (
     <>
-      <h2>If you're seeing this, the 'Generate' page set up is successful.</h2>
+    <Container>
+      <Row style={{width: "100%"}}>
+        <h2 style={{fontSize: "5rem", textAlign: "center"}}>UNDER CONSTRUCTION</h2>
+      </Row>
+      <Row>
+        <img style={{size: "75%"}} src="../img/lego-minifigure.png" alt="Under-construction" />
+      </Row>
+    </Container>
     </>
   );
 }

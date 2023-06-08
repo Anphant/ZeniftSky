@@ -1,8 +1,4 @@
-.splash-container-row {
-  /* height: 35rem; */
-}
-
-.splash-container-left {
+.splash-opening-text {
   /* min-height: 35rem; */
   display: flex;
   flex-direction: column;
@@ -10,8 +6,6 @@
   row-gap: 1rem;
 }
 
-/* .splash-elements {
-} */
 .featured-card {
   display: flex;
   justify-content: center;
@@ -33,21 +27,6 @@
 
 .splash-button {
   max-width: 10rem;
-}
-
-.splash-child-container {
-  max-width: 65%;
-  display: flex;
-  margin-top: 3.5rem;
-  justify-content: center;
-}
-
-#dolphin-container {
-  display: none;
-}
-
-#dolphin {
-  max-width: 8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -75,14 +54,20 @@
   }
 }
 
-.splash-stats-text {
-  text-align: center;
+.splash-stats {
+  padding-top:5rem;
+  max-width: 75%;
+  display: flex;
+  margin-top: 3.5rem;
+  justify-content: center;
 }
 
 .splash-stats-col {
   min-width: 7.5rem;
-  /* padding-left: 0.75rem;
-  padding-right: 0.75rem; */
+}
+
+.splash-stats-text {
+  text-align: center;
 }
 
 .splash-stats {

@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "../css/Header.css";
+import { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas, Button } from "react-bootstrap";
+import GridModal from "./GridModal";
 
 function Header() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       {["lg"].map((expand) => (
@@ -23,7 +27,7 @@ function Header() {
               placement="end"
               bg="dark"
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header closeButton  style={{borderStyle: 0}}>
                 <Offcanvas.Title
                   id={`offcanvasNavbarLabel-expand-${expand}`}
                   variant="dark"
@@ -34,26 +38,17 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#about" className="px-4 navbar-text">
-                    <Link to="./about">About</Link>
+                  <Nav.Link href="./about" className="px-4 navbar-text" style={{color: "#000"}}>
+                    <Link to="./about" style={{color: "#000;"}}>About</Link>
                   </Nav.Link>
-                  <Nav.Link href="#action2" className="px-4 navbar-text">
-                    <Link to="./gallery">Gallery</Link>
+                  <Nav.Link href="./blog" className="px-4 navbar-text" style={{color: "#000"}}>
+                    <Link to="./blog" style={{color: "#000;"}}>Blog</Link>
                   </Nav.Link>
-                  <Nav.Link href="#action2" className="px-4 navbar-text">
-                    <Link to="./generate">Generate</Link>
+                  <Nav.Link href="#./generate" className="px-4 navbar-text" style={{color: "#000"}}>
+                    <Link to="./generate" style={{color: "#000;"}}>Generate</Link>
                   </Nav.Link>
                 </Nav>
-                {/* <Form className="d-flex px-4">
-                  <Form.Control
-                    type="search"
-                    placeholder="Metaverse"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form> */}
-                <Button variant="success" className="px-4 button-wallet">
+                <Button variant="success" className="px-4 button-wallet" onClick={() => setModalShow(true)}>
                   Connect Wallet
                 </Button>
               </Offcanvas.Body>
@@ -61,6 +56,7 @@ function Header() {
           </Container>
         </Navbar>
       ))}
+      <GridModal show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 }

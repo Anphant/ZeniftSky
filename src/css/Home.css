@@ -14,7 +14,7 @@ body {
 .navbar-outer-container,
 .navbar-inner-container,
 .footer-container,
-.about-container {
+.about-container, .blog-post, .blog-content {
   /* font-family: "Lexend", sans-serif; */
   
   font-weight: 300;

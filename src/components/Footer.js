@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/Footer.css";
 import { Navbar, Container, Row, Col } from "react-bootstrap";
 
@@ -12,7 +13,7 @@ export default function App() {
                 <h5 className="widget-title">
                   ZenithSky<span></span>
                 </h5>
-                <p>About the company, little discription will goes here.. </p>
+                <p>ZenithSky is your gateway to a realm where imagination knows no bounds and the future of digital ownership unfolds before your eyes.</p>
               </div>
             </div>
 
@@ -23,39 +24,13 @@ export default function App() {
                 </h5>
                 <ul className="thumbnail-widget">
                   <li>
-                    <div className="thumb-content">
-                      <a href="#.">Get Started</a>
-                    </div>
+                    <Link className="thumb-content" to="./about">About</Link>
                   </li>
                   <li>
-                    <div className="thumb-content">
-                      <a href="#.">Top Leaders</a>
-                    </div>
+                    <Link to="./blog">Blog</Link>
                   </li>
                   <li>
-                    <div className="thumb-content">
-                      <a href="#.">Success Stories</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="thumb-content">
-                      <a href="#.">Event/Tickets</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="thumb-content">
-                      <a href="#.">News</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="thumb-content">
-                      <a href="#.">Lifestyle</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="thumb-content">
-                      <a href="#.">About</a>
-                    </div>
+                    <Link to="./generate">Generate</Link>
                   </li>
                 </ul>
               </div>

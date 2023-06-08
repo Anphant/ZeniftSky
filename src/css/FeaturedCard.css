@@ -12,37 +12,32 @@
 
 .fc-card {
   margin-top: 1rem;
-  min-width: 65%;
+  min-width: 100%;
   box-shadow: 0px 75px 150px 1px #ddd;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-/* .fc-card-img {
-  max-width: 75%;
-} */
+.fc-card-img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+}
 
-/* .featured-card-container {
-  color: #000;
-  display: flex;
-  justify-content: center;
-  max-width: 25%;
-  height: 32.5rem;
-} */
+.fc-card:hover .fc-card-img {
+  transform: scale(1.25);
+}
+
+.card-body {
+  background-color: #FFF;
+  position: relative;
+  z-index: 5;
+}
 
 .fc-text-container {
   font-size: 1.2rem;
   color: #000;
-  /* padding-bottom: 1.5rem; */
-
-  /* display: flex;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  padding-left: 1.35rem;
-  padding-right: 1.35rem; */
 }
-
-/* .featured-card-text1 {
-  font-weight: 400;
-} */
 
 .featured-card-text1 {
   font-size: 1.25rem;

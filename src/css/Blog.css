@@ -1,0 +1,13 @@
+.blog-post > h2 {
+    font-size: 4rem;
+}
+
+.blog-post > img {
+    max-width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.blog-post > .blog-content {
+    padding: 1.5rem;
+}
